@@ -3,7 +3,6 @@
 ![image](https://github.com/user-attachments/assets/49a271e9-586b-405f-8a12-cc4128b166bb)
 
 
-In einem Hochschulprojekt konzentrierten wir uns als Studententeam auf den Bau und das Testen eines teleoperierten Autos.
 
 ## Als ersten Schritt zur Erstellung von Paketen sollten wir daher COLCON installieren;
 ```bash
