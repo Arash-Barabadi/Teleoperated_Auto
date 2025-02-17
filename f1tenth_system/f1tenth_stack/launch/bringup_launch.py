@@ -127,7 +127,34 @@ def generate_launch_description():
         name='static_baselink_to_laser',
         arguments=['0.27', '0.0', '0.11', '0.0', '0.0', '0.0', 'base_link', 'laser']
     )
+    camera_node = Node(
+        package='realsense2_camera',
+        executable='realsense2_camera_node',
+        name='d435i_camera_node',
+        parameters=[LaunchConfiguration('sensors_config')]
+    )
+    
+    mtlt305_node = Node(
+    	package='mtlt305_ros',
+    	executable='mtlt305_node',
+    	name='mtlt305_imu_node'
+    )
+    
+    record_prc = ExecuteProcess(
+    	cmd = ["ros2", "bag", "record", "-a"],
+    	output="screen"
+    )	
 
+    # finalize
+    #ld.add_action(joy_node)
+    #ld.add_action(joy_teleop_node)
+    ld.add_action(ackermann_to_vesc_node)
+    ld.add_action(vesc_to_odom_node)
+    ld.add_action(vesc_driver_node)
+    ld.add_action(camera_node)
+    ld.add_action(mtlt305_node)
+    #ld.add_action(record_prc)
+    
     # finalize
     ld.add_action(joy_node)
     ld.add_action(joy_teleop_node)
