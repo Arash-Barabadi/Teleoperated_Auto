@@ -127,6 +127,7 @@ def generate_launch_description():
         name='static_baselink_to_laser',
         arguments=['0.27', '0.0', '0.11', '0.0', '0.0', '0.0', 'base_link', 'laser']
     )
+    
     camera_node = Node(
         package='realsense2_camera',
         executable='realsense2_camera_node',
