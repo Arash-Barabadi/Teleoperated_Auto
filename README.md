@@ -1,5 +1,5 @@
 # Teleoperated Auto
-#
+![image](https://github.com/user-attachments/assets/9482d1a5-3fc8-4707-88d7-66037b5d9fe7)
 ## During the last semester, our team successfully completed a Teleoperated Autonomous Vehicle project, working in two specialized groups: hardware and software. Our goal was to develop a system that enables remote control and autonomous operation while ensuring seamless communication between various components.
 ##   I was responsible for designing and implementing the ROS (Robot Operating System) architecture, which served as the foundation for communication between different nodes. My key contributions included:
 ###      IMU Sensor Node: Developed and integrated the Inertial Measurement Unit (IMU) to provide real-time orientation and motion data for stability and navigation.
@@ -9,7 +9,7 @@
 
 ### This project provided valuable hands-on experience in robotics, sensor integration, and system communication, helping us bridge the gap between theoretical knowledge and practical implementation.
 
-![image](https://github.com/user-attachments/assets/9482d1a5-3fc8-4707-88d7-66037b5d9fe7)
+
 
 ![image](https://github.com/user-attachments/assets/f279f852-0018-48ca-b2ae-959a067eaa79)
 
